@@ -6,6 +6,11 @@ angular.module('ecommerce', ['ui.router'])
     templateUrl:'app/views/components/components.html',
     controller:'componentsCtrl'
   })
+  .state('product', {
+    url:'/components',
+    templateUrl:'app/views/components/components.html',
+    controller:'componentsCtrl'
+  })
 
   $urlRouterProvider.otherwise('/components');
 });

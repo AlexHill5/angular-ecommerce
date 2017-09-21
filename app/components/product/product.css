@@ -1,13 +1,13 @@
 product {
-  display:block;
+  display: flex;
+  min-height: 200px;
 }
-product .picture{
-  background-color:#eee;
+ .picture{
+
   display:inline-block;
-  width:300px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  height:300px;
+  width: 300px;
+
 }
 
 product .padded{
