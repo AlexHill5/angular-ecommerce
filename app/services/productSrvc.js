@@ -23,5 +23,8 @@ angular.module("ecommerce").service('productSrvc', function(){
   imageUrl:'http://nba.frgimages.com/FFImage/thumb.aspx?i=/productImages/_2654000/ff_2654848a_full.jpg&w=340',
   description:'These stylish shoes are great for throwing at people.  Holding pencils.  Also could be worn on feet.',
   price:16
-  }]
+}]
+
+
+
 })

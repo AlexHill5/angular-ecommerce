@@ -3,7 +3,8 @@ angular.module('ecommerce').component('cartChip', {
     controllerAs: 'cp',
     controller: function(cartSrvc){
         this.getLength = function(){
-            return cartSrvc.getCart().length
+            return cartSrvc.getNumberItems()
         }
+        // this.other function here
     }
 })

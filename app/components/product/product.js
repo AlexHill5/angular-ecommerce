@@ -7,6 +7,7 @@ angular.module('ecommerce').component('product', {
   controllerAs: 'pd', 
   controller: function(cartSrvc){
     this.addItem = function(){
+      console.log(this.product)
       cartSrvc.addItem(this.product)
     }
   }

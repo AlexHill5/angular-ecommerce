@@ -13,7 +13,18 @@ price:25
 
   // Basic add a new line item when we add an item, with amt 1.
   this.addItem = function(newItem){
-    cart.push(Object.assign({}, {amt:1,product:newItem}));
+      let match = false
+    
+    cart.map( item => {
+      if (item.product.name === newItem.name){
+         item.amt++, match = true
+      }
+    }) 
+      if (!match){
+        cart.push({amt: 1, product: newItem}) }
+
+   
+    console.log(cart)
   }
 
   // return the card object
@@ -27,6 +38,12 @@ price:25
     return cart.reduce((total, item)=>{
       return total+item.product.price*item.amt
     },0);
+  }
+
+  this.getNumberItems = function(){
+    return cart.reduce((total, item) => {
+      return total + item.amt
+    }, 0)
   }
 
 })
